@@ -1,0 +1,137 @@
+body
+{
+	font-family: "Arial", "sans-serif"; /* Police */
+	padding: 0px; /* Espace entre le haut Header et partie gauche */
+	margin: 0px; /* Marge de la ligne */
+	font-size: 13px; /* Taille de la police */
+}
+
+a
+{
+	text-decoration: none; /* Le trait sous-ligner enlever */
+}
+
+.navbar
+{
+	color: black; /* Changer la couleur de la police */
+}
+
+.navbar2
+{
+	margin-top: 3px; /* Déplace vers le bas */
+	margin-right: 17px; /* Déplace vers la gauche */
+}
+
+.connexion
+{
+	color: white; /* Changer la couleur de la police */
+	font-weight: bolder; /* Mettre la police en gras */
+	background-color: #4285f4; /* Couleur de remplissage de fond */
+	padding: 6px 12px; /* Changement de la taille de l objet (top, right, bottom, left) */
+	font-size: 1em; /* Taille de la police */
+	border-radius: 2px; /* Arrondir les bords */
+	border: 1px solid #4285f4; /* Rajoute une bordure solide */
+	margin-right: 30px; /* Déplace vers le gauche */
+	margin-top: -4px; /* Déplace vers le bas */
+}
+
+nav
+{
+	margin-top: 20px; /* Déplace vers le bas */
+}
+
+nav ul
+{
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+#carre
+{
+	height: 24px; /* Permet de changer la taille de l'objet */
+	margin-top: -1px; /* Déplace vers le bas */
+	margin-right: 17px; /*Déplace vers la gauche */
+}
+
+.imagegoogle
+{
+	margin-top:	61px; /* Déplacer vers le bas */
+	margin-left: 5px; /* Déplace vers la gauche*/
+}
+
+section
+{
+	display: flex; /* Permet de rendre l'ensemble flex mais seulement les enfants */
+	flex-direction: column; /* Mettre en colonnes */
+	align-items: center; /* Aligner les objets au centre */
+}
+
+.saisie
+{
+	box-shadow: #D6D6D6 4px 6px 14px 2px; /* Rajoute un effet d'ombre, choix de la couleur */
+	width: 580px; /* Largeur de l'objet */
+	height: 40px; /* Longueur de l'objet */
+	margin-top: 13px; /* Déplacer l'objet vers la droite */
+}
+
+input
+{
+	width: 580px; /* Largeur de l'objet */
+	height: 40px; /* Longueur de l'objet */
+}
+
+div button
+{
+	color: grey; /* Changer la couleur de la police */
+	font-weight: bolder; /* Mettre la police en gras */
+	background-color: #f2f2f2; /* Couleur de remplissage de fond */
+	padding: 8px 12px; /* Changement de la taille de l objet (top, right, bottom, left) */
+	font-size: 1em; /* Taille de la police */
+	border-radius: 2px; /* Arrondir les bords */
+	border: 1px solid #f2f2f2; /* Rajoute une bordure solide */
+	margin-right: 8px; /* Déplace vers le gauche */
+	margin-top: 40px; /* Déplace vers le bas */
+}
+
+ div button:hover /* Permet de faire un changement sur le meme objet */
+ {
+ 	border: 1px solid grey; /* */
+	font-weight: bold; /* Mettre la police en gras*/
+	color: black; /* Couleur Noir */
+ }
+
+ .france
+ {
+ 	width: 100%; /* Pour mettre toute le bordule a l'horizontale */
+ 	background-color: #f2f2f2; /* Couleur fond background */
+ 	border: 1px solid #DCDCDC; /* Bordure solide */
+ 	margin-top: 230px; /* Déplacer vers le bas */
+ }
+
+ .francep
+ {
+ 	font-size: 15px; /* Taille de la police */
+ 	color: grey; /* Couleur de la police */
+ 	margin-left: 30px; /* Déplacer vers la droite */
+ 	margin-top: 10px; /* Déplacer vers le bas */
+ }
+
+ .flex_footer
+ {
+ 	display: flex;
+ 	background-color: #f2f2f2;
+ 	border: 1px solid #DCDCDC;
+ 	font-size: 15px;
+ }
+
+ .gauche a
+ {
+ 	color: grey;
+ }
+
+ .droite a
+ {
+ 	display: flex;
+ 	align-items: right;
+ 	color: grey;
+ }
