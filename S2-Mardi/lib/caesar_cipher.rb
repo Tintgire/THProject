@@ -1,8 +1,22 @@
-def caesar_cipher(sentence, key)
+def caesar_cipher(string, key)
 
-  unless key(is_a? Integer) && (key > 26 || key < 0)
-    return "La cle est mauvaise"
-  end
-
+  s = string.split(//)
   i = 0
-  sentence.char do |letter|
+  while string[i]
+    s[i] = s[i].ord
+    if s[i] < 65 || s[i] > 90 && s[i] < 97
+
+    else
+      s[i] = s[i] + key
+	    if s[i] > 122 || s[i] > 90 && s[i] < 97
+	      s[i] = s[i] - 26
+	    end
+	  end
+	  s[i] = s[i].chr
+      i = i + 1
+  end
+  puts s.join
+end
+
+puts caesar_cipher("ZzYy", 1)
+
