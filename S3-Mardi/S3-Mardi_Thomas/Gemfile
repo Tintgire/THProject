@@ -15,3 +15,6 @@
 		gem 'watir' 
 
 		gem 'launchy' 
+		gem 'json'
+		gem 'google_drive'
+		gem 'csv'
