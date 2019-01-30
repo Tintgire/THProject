@@ -13,8 +13,6 @@ class ApplicationController < Sinatra::Base
 		redirect '/'
 	end
 	get '/gossip/:id' do |id|
-		id
-		Comment.all(id)
 		erb :gossip_display, locals: {gossip: Gossip.all[id.to_i] , id: id, comments: Comment.all(id)}
 	end
 	post '/gossip/modify/:id' do |id|
@@ -22,7 +20,6 @@ class ApplicationController < Sinatra::Base
 		redirect '/'
 	end
 	post '/comment/new/:id' do |id|
-		puts params["comment_content"]
 		Comment.new(id,params["comment_content"]).save
 		redirect "/gossip/#{id}"
 	end
